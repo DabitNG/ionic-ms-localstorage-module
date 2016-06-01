@@ -8,12 +8,11 @@
 	'use strict';
 
 	/**
-	* LocalStorage Module services
+	* LocalStorage services module 
 	*/
 	angular.module('local-storage.services', [])
 
 	.factory('LocalStorage', localStorageFctr);
-	.factory('MyObjFctr', myObjFctr)
 
 	function localStorageFctr($window){
 	  return {
@@ -32,20 +31,6 @@
 	      return JSON.parse($window.localStorage[key] || df);
 	    }
 	  }
-	};
-
-	function myObjFctr(){
-		function MyObj(myOjbData){
-			if(myOjbData){
-				this.setData(myOjbData);
-			}
-		};
-		MyObj.prototype = {
-			setData: function(myOjbData){
-				angular.extend(this, myOjbData),
-			}
-		};
-		return MyObj;
 	};
 
 })();
