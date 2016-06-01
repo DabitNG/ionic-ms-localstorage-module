@@ -1,7 +1,7 @@
 /**
  *  LocalStorage Module.
- *  LocalStorage controllers required as dependency.
+ *  local-storage services required as dependency.
  *  @author DabitNG 
  */
 
-angular.module('local-storage', ['local-storage.controllers']);
+angular.module('local-storage',['local-storage.services']);
