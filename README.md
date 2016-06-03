@@ -18,9 +18,9 @@ This module provides a localstorage service to your Ionic MS app.
 ### Usage
 Inject `LocalStorage` to your controller. This service provides some functions:
 - `LocalStorage.set(key, value)`: Save value by key.
-- `LocalStorage.get(key, defaultValue)`: Returns a value by key. If not defaultValue provided, returns {}
+- `LocalStorage.get(key, defaultValue)`: Returns a value by key. If not defaultValue provided, returns `''`
 - `LocalStorage.setObject(key, value)`: Save an object by key.
-- `LocalStorage.getObject(key, defaultValue)`: Returns an object by key. If not defaultValue provided, returns []
+- `LocalStorage.getObject(key, defaultValue)`: Returns an object by key. If not defaultValue provided, returns `{}`
 
 ### Support or Contact
 Having trouble with this module? Contact with [autor](https://github.com/DabitNG)
