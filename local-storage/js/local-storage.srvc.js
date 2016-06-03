@@ -21,17 +21,17 @@
 	    },
 	    get: function(key, defaultValue) {
 	    	var df = defaultValue || '';
-	      return $window.localStorage[key] || defaultValue;
+	        return $window.localStorage[key] || defaultValue;
 	    },
 	    setObject: function(key, value) {
-	      $window.localStorage[key] = JSON.stringify(value);
+	        $window.localStorage[key] = JSON.stringify(value);
 	    },
 	    getObject: function(key, defaultValue) {
 	    	var df = defaultValue || '{}';
-	      return JSON.parse($window.localStorage[key] || df);
+	    	var obj = JSON.parse($window.localStorage[key]) || df; 
+	        return obj;
 	    }
 	  }
 	};
 
 })();
-
